@@ -1,0 +1,180 @@
+ 
+
+/* Lista de hobbies */
+.lista-hobbies {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto ;
+  max-width: 200px;
+}
+
+.lista-hobbies li {
+  font-family: "Bungee Inline", sans-serif;
+  background: rgba(9, 179, 205, 0.893); 
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border-radius: 20px; 
+  box-shadow: 20px  10px 6px 3px  rgba(0, 0, 0, 0.603);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.lista-hobbies a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.lista-hobbies a:hover {
+    text-decoration: underline;
+     transition: transform 0.3s ease;
+     transform: scale(1.05);
+}
+
+.lista-hobbies li:hover {
+    text-decoration: underline;
+     transition: transform 0.3s ease;
+     transform: scale(1.05);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.texto {
+  background:rgb(49, 62, 126);
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* CONFIGURAÇÕES DA COR DE FUNDO DO TÍTULO */
+.titulo {
+  font-size: 2rem;
+  margin-top: -20px;
+  margin-bottom: 3rem;
+  color: rgb(0, 0, 0);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(20, 228, 5, 0.658);
+  max-width: 250px;
+  border-radius: 60px;
+}
+/* CONFIGURAÇÕES DO TEXTO DO TÍTULO */
+.titulo {
+  text-align:center ; 
+  font-weight: bolder;
+  font-style: oblique; 
+  font-variant: small-caps;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 250px ;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 40px ;
+}
+/* CONFIGURAÇÕES DA BORDA  */
+.titulo {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(77, 67, 67);
+
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* CONFIGURAÇÕES DA COR DE FUNDO DO TÍTULO */
+.titulo-lista {
+  font-size: 2rem;
+  margin-top: -10px;
+  margin-bottom: 35px;
+  text-align: center; 
+  color: rgb(0, 0, 0);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.658);
+  max-width: 220px;
+  border-radius: 60px;
+}
+/* CONFIGURAÇÕES DO TEXTO DO TÍTULO */
+.titulo-lista {
+  font-weight: bolder;
+  font-style: inherit; 
+  font-variant: unset;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+/* CONFIGURAÇÕES DA BORDA  */
+.titulo-lista {
+  border-style: inset;
+  border-width: 5px;
+  border-color: rgba(32, 17, 234, 0.918);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.foto-anime {
+  display: block;      
+  margin: 20px auto;      
+  max-width: 200px;      
+  border-radius: 15px; 
+  background: black;  
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.494);
+  border: 5px solid #ff66cc; 
+   transition: transform 0.3s ease;  /*Animação suave */
+    
+}
+.foto-anime:hover {
+  transform: scale(1.10);
+}
+
+.parede {
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  
+  width: 290px;          
+  height: 390px;         
+
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;  
+  box-shadow: 20px 6px 3px rgba(0, 0, 0, 0.507);
+  margin: 20px auto;    
+  margin-bottom: 3rem;
+  text-decoration: none; 
+  transition: transform 0.3s ease;
+
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px; 
+}
+
+
+
+.parede:hover {
+   transform: scale(1.05);
+}
+
+.video{
+  display: block;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  max-width: 400px;
+  border: 20px solid #333;  
+  border-radius: 20px; 
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.5);  
+  transition: transform 0.3s ease;
+}
+
+.video:hover {
+     transition: transform 0.3s ease;
+     transform: scale(1.05);
+}

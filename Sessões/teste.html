@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.lista-anime {
+  list-style: none;     /* remove numeração padrão */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;            /* espaço entre as caixas */
+}
+
+.anime-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00c3ff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.anime-box:hover {
+  transform: scale(1.05); /* zoom suave ao passar o mouse */
+}
+
+.anime-titulo {
+  background: #00c3ff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.foto-anime {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+</style>
+
+
+
+<body>
+    <h1 class="titulo">Animes</h1>
+
+<ol class="lista-anime">
+  <!-- Anime 1 -->
+  <li class="anime-box">
+    <div class="anime-titulo">Charlotte</div>
+    <a href="../sessões de animes/anime 1.html" class="parede">
+      <img src="../img/Charlotte_2015.jpg" alt="Charlotte" class="foto-anime aumentar-foto">
+    </a>
+  </li>
+
+  <!-- Anime 2 -->
+  <li class="anime-box">
+    <div class="anime-titulo">Aggretsuko</div>
+    <a href="../sessões de animes/anime 2.html" class="parede">
+      <img src="../img/Aggretsuko.jpeg" alt="Aggretsuko" class="foto-anime aumentar-foto">
+    </a>
+  </li>
+
+  <!-- Anime 3 -->
+  <li class="anime-box">
+    <div class="anime-titulo">Beastars</div>
+    <a href="../sessões de animes/anime 3.html" class="parede">
+      <img src="../img/Beastars 2nd Season.jpeg" alt="Beastars" class="foto-anime aumentar-foto">
+    </a>
+  </li>
+
+  <!-- Anime 4 -->
+  <li class="anime-box">
+    <div class="anime-titulo">Boku no Hero</div>
+    <a href="../sessões de animes/anime 4.html" class="parede">
+      <img src="../img/boku no hero.jpeg" alt="Boku no Hero" class="foto-anime aumentar-foto">
+    </a>
+  </li>
+
+  <!-- Anime 5 -->
+  <li class="anime-box">
+    <div class="anime-titulo">Miss Kobayashi</div>
+    <a href="../sessões de animes/anime 5.html" class="parede">
+      <img src="../img/Miss Kobayashi's Dragon Maid .jpeg" alt="Miss Kobayashi's Dragon Maid" class="foto-anime aumentar-foto">
+    </a>
+  </li>
+</ol>
+
+</body>
+</html>
