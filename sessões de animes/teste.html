@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo no Site</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      margin: 0;
+    }
+    canvas {
+      background: #222;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = 200, y = 200;
+    const size = 30;
+    const speed = 5;
+
+    function drawPlayer() {
+      ctx.fillStyle = "lime";
+      ctx.fillRect(x, y, size, size);
+    }
+
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function gameLoop() {
+      clearCanvas();
+      drawPlayer();
+      requestAnimationFrame(gameLoop);
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowUp") y -= speed;
+      if (event.key === "ArrowDown") y += speed;
+      if (event.key === "ArrowLeft") x -= speed;
+      if (event.key === "ArrowRight") x += speed;
+    });
+
+    gameLoop();
+  </script>
+</body>
+</html>
